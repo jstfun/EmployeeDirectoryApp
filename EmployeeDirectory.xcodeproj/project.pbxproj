@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8AA38C729A6C4B700F25E95 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA38C629A6C4B700F25E95 /* EmployeeDetailView.swift */; };
+		F8AA38C929A6C53D00F25E95 /* EmployeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AA38C829A6C53D00F25E95 /* EmployeeDetailViewModel.swift */; };
 		F8E79B2A2993E50F00ABC5F8 /* EmployeeDirectoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E79B292993E50F00ABC5F8 /* EmployeeDirectoryApp.swift */; };
 		F8E79B2C2993E50F00ABC5F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E79B2B2993E50F00ABC5F8 /* ContentView.swift */; };
 		F8E79B2E2993E51300ABC5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E79B2D2993E51300ABC5F8 /* Assets.xcassets */; };
@@ -82,6 +84,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8AA38C629A6C4B700F25E95 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		F8AA38C829A6C53D00F25E95 /* EmployeeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewModel.swift; sourceTree = "<group>"; };
 		F8E79B262993E50F00ABC5F8 /* EmployeeDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E79B292993E50F00ABC5F8 /* EmployeeDirectoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDirectoryApp.swift; sourceTree = "<group>"; };
 		F8E79B2B2993E50F00ABC5F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8AA38C529A6C49900F25E95 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F8AA38C629A6C4B700F25E95 /* EmployeeDetailView.swift */,
+				F8AA38C829A6C53D00F25E95 /* EmployeeDetailViewModel.swift */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
 		F8E79B1D2993E50F00ABC5F8 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +277,7 @@
 		F8E79B562993E56A00ABC5F8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F8AA38C529A6C49900F25E95 /* EmployeeDetail */,
 				F8E79BB029953F5E00ABC5F8 /* Common */,
 				F8E79BA729953A4E00ABC5F8 /* EmployeeList */,
 				F8E79B2B2993E50F00ABC5F8 /* ContentView.swift */,
@@ -695,6 +709,7 @@
 				F8E79B6B2993E9A400ABC5F8 /* EmployeeEntity.swift in Sources */,
 				F8E79BB229953F7900ABC5F8 /* LoadingView.swift in Sources */,
 				F8E79B682993E88200ABC5F8 /* Employees+Decodable.swift in Sources */,
+				F8AA38C729A6C4B700F25E95 /* EmployeeDetailView.swift in Sources */,
 				F8E79B912993F8DF00ABC5F8 /* NetworkError.swift in Sources */,
 				F8E79B5F2993E6B100ABC5F8 /* EmployeeModel.swift in Sources */,
 				F8E79BAF29953F1100ABC5F8 /* AppMessage.swift in Sources */,
@@ -707,6 +722,7 @@
 				F8E79BA929953AA900ABC5F8 /* EmployeeListView.swift in Sources */,
 				F8E79B2A2993E50F00ABC5F8 /* EmployeeDirectoryApp.swift in Sources */,
 				F8E79B742993EC7E00ABC5F8 /* ImageRepository.swift in Sources */,
+				F8AA38C929A6C53D00F25E95 /* EmployeeDetailViewModel.swift in Sources */,
 				F8E79B932993F8EA00ABC5F8 /* HTTPClient.swift in Sources */,
 				F8E79B802993F32200ABC5F8 /* EmployeesRepositoryImp.swift in Sources */,
 				F8E79BB529953FA600ABC5F8 /* EmployeeView.swift in Sources */,

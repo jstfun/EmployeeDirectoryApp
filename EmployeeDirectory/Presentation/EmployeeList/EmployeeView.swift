@@ -18,7 +18,7 @@ struct EmployeeView: View {
                 Image(data: photoImage)
                     .resizable()
                     .scaledToFill()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.gray.opacity(0.6))
                     .frame(width: 64, height: 64)
                     .clipShape(Circle())
                 

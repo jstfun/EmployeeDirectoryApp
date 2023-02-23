@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension Image {
-    init(data: Data?, placeholder: String = "person.circle.fill") {
+    init(data: Data?, placeholder: String = "person.crop.circle") {
         guard let data = data, let uiImage = UIImage(data: data) else {
             self = Image(systemName: placeholder)
             return

@@ -26,6 +26,9 @@ struct EmployeeListView: View {
                 LoadingView(scaleSize: 1.6)
                     .visible(viewModel.showLoading)
             }
+            .navigationDestination(for: EmployeeModel.self) { employee in
+                EmployeeDetailView(viewModel: EmployeeDetailViewModel(employee))
+            }
             .navigationTitle(viewModel.pageTitle)
         }
         .task {
@@ -38,8 +41,12 @@ struct EmployeeListView: View {
             ForEach(viewModel.teamEmployeesList, id: \.self) { teamEmployees in
                 Section(header: SectionView(title: teamEmployees.team.rawValue)) {
                     ForEach(teamEmployees.employees, id: \.self) { employee in
-                        EmployeeView(viewModel: viewModel,
-                                     employee: employee)
+                        NavigationLink(value: employee) {
+                            EmployeeView(viewModel: viewModel,
+                                         employee: employee)
+                            
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
